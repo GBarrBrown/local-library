@@ -5,7 +5,9 @@
   "author": "gbarrbrown <gbb7899@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server"
+    "dev": "nodemon server & webpack --watch",
+    "windev1": "nodemon server",
+    "windev2": "webpack --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
