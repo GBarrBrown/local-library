@@ -5,7 +5,7 @@
   "author": "gbarrbrown <gbb7899@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server & webpack --watch",
+    "dev": "nodemon server & webpack --mode development --watch",
     "windev1": "nodemon server",
     "windev2": "webpack --watch"
   },
@@ -25,6 +25,9 @@
   "dependencies": {
     "express": "^4.16.4",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^5.0.2"
   }
 }
