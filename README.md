@@ -28,7 +28,7 @@
 ##### MVP
 
 ##### Stretch aka nice-to-haves
-----
+----    
 #### Tech Goals
 - Responsive Design
 - Mobile Friendly
