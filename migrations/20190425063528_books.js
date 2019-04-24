@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
         table.increments('bookId').primary()// eg 7
         table.string('title')               // eg Frankenstein's Monster
         table.integer('authorId')           // eg 12
-        table.integer('gerneId')            // eg 3 - horror
+        table.integer('genreId')            // eg 3 - horror
         table.integer('yearPublished')
     })
 };
