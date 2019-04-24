@@ -4,8 +4,13 @@ const { getAllBooks } = require('../db/books')
 
 // GET /api/v1/routeName  - currently returns all books
 router.get('/', (req, res) => {
-    getAllBooks().then((response) => {
+    getAllBooks()
+    .then((response) => {
         res.json(response)
+    })
+    .catch((err) => {
+        console.log(err)
+        res.status(500).json({error: 'Something went wrong'})
     })
 })
 
