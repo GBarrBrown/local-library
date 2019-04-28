@@ -2,7 +2,7 @@ const connection = require("./connection");
 
 module.exports = {
   getAllBooks,
-  getBookByTitle,
+  getBookById,
   getBooksByAuthorFirstName
 };
 
@@ -12,14 +12,14 @@ function getAllBooks(testDb) {
   return db("books");
 }
 
-function getBookByTitle(testDb, title) {
+function getBookById(id, testDb) {
   const db = testDb || connection;
   return db("books")
-    .where("title", title)
+    .where("bookId", id)
     .select();
 }
 
-function getBooksByAuthorFirstName(testDb, authorFirstName) {
+function getBooksByAuthorFirstName(authorFirstName, testDb) {
   const db = testDb || connection;
   return db("authors")
     .join("books", "authors.authorId", "books.authorId")
