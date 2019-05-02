@@ -1,8 +1,12 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 const Homepage = (props) => {
     return(
-        <h2>Homepage</h2>
+        <Fragment>
+            <h1>Local Library</h1>
+            <p>A React project to practice responsive web design and DB functions</p>
+            <hr />
+        </Fragment> 
     )
 }
 
