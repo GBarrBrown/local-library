@@ -1,8 +1,12 @@
 import React from 'react'
+import Homepage from './Homepage';
 
 const App = () => {
     return (
-        <h1>Hello, world!</h1>
+        <div>
+            <h1>Hello, world!</h1>
+            <Homepage />
+        </div>
     )
 }
 
